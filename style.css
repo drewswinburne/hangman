@@ -1,26 +1,68 @@
 body {
   font-family: Impact, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
 
+h1 {
+  font-size: 3em;
+}
+h2 {
+  padding:20px;
 }
 
 header {
   height: 120px;
-outline: dotted red 1px;
+  /*outline: dotted red 1px;*/
+  text-align: center;
+  line-height: 70px;
 
 }
 
 .blankAnswer {
-  outline: solid green 1px;
+  border-bottom: solid #131313 2px;
   height: 60px;
   width: 45px;
   margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ababab;
+  border-right: #131313 solid 2px;
+  border-radius: 10%;
+  -moz-box-shadow:    3px 3px 3px 0px #ccc;
+   -webkit-box-shadow: 3px 3px 3px 0px #ccc;
+   box-shadow:         3px 3px 3px 0px #ccc;
+
 }
+
+.guess {
+  font-size: 1.8em;
+  display:inline-block;
+  height: 50px;
+  width: 50px;
+  background-color: #ababab;
+  /*outline: dotted black 1px;*/
+  /*display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;*/
+  text-align: center;
+line-height: 45px;
+-moz-box-shadow:    3px 3px 3px 0px #ccc;
+ -webkit-box-shadow: 3px 3px 3px 0px #ccc;
+ box-shadow:         3px 3px 3px 0px #ccc;
+}
+
+
 
 input {
   width: 550px;
   height: 70px;
   font-family: Impact, sans-serif;
   font-size: 44px;
+margin: 0 auto;
 }
 
 
@@ -29,21 +71,33 @@ aside {
   background-size: cover;
   background-position: -90px;
   flex-grow: 1;
-  outline: dotted red 1px;
+  outline: solid black 3px;
   width: 200px;
-  height: 800px;
+  height: 600px;
   flex-direction: column-reverse;
   display: flex;
 }
 
 nav {
-  /*float:right;*/
-  flex-grow: 1;
+display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+justify-content: flex-start;
   order: -1;
-  outline: dotted red 1px;
-  width: 10%;
-  height: 800px;
+  /*outline: dotted red 1px;*/
+  width: 200px;
+  height: 600px;
+  outline: solid black 2px;
 }
+
+nav div {
+  height: 100px;
+  width: 200px;
+  background-color: lemonchiffon;
+  text-align: center;
+}
+
+
 
 #main {
   display: flex;
@@ -53,34 +107,44 @@ nav {
 }
 
 #maincontainer {
-  display: flex;
+  width: 700px;
+  /*display: flex;
   flex-direction: column;
   flex-grow: 4;
-
+  align-content: center;
+  justify-content: center;*/
 }
 
 main {
   display:flex;
   align-content: center;
   /*flex-grow: 4;*/
-  outline: dotted red 1px;
+  /*outline: dotted red 1px;*/
   height: 100px;
   min-width: 50%;
-  background-color: lemonchiffon;
+  height: 25%;
+
+  /*background-color: lemonchiffon;*/
 }
 
 section {
 display: flex;
 flex-direction: row;
- align-content: center;
+ align-content: space-between;
+ justify-content: space-around;;
   flex-grow: 1;
-  outline: dotted blue 1px;
-  height: 50px;
+  /*outline: dotted blue 1px;*/
+  height: 25%;
   min-width: 50%;
 }
 
+section div {
+  font-size: 36px;
+  color: blue;
+}
+
 footer {
-  outline: dotted red 1px;
+  /*outline: dotted red 1px;*/
   align-content: center;
 }
 
@@ -92,3 +156,4 @@ footer {
   /*flex-grow: 1;*/
 
 }
+img

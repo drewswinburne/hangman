@@ -14,7 +14,7 @@ As a user, I want my unsuccessful guesses to display so I can reference them
 As a user, I want to be able to randomly generate a word to play the game in single player (maybe reference a large array)
 I want to have guessable words be any length
 I want a confirm dialog box
-
+I want to not be able to accidentally guess letters I've tried, or weird characters
 
 
 BRONZE
