@@ -5,8 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Hangman</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
+  <!-- <script src="jquery-3.1.1.min.js" charset="utf-8"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
 </head>
 <body>
   <header>
@@ -16,13 +21,19 @@
 
   <div id="main">
     <nav>
+
       <div class="guesses">
         <h2>Guessed Letters
         </h2>
       </div>
       <div>
-        <h2>Scoreboard</h2>
+<h2>Scoreboard</h2>
+<h3>Player One</h3>
+<p id="one">0</p>
+<h3>Player Two</h3>
+<p id="two">0</p>
       </div>
+
 
 
 
@@ -30,11 +41,11 @@
     <div id="maincontainer">
       <section>
       <form id="answerform">
-        <input id="answer" autofocus placeholder="player one pick a word!">
+        <input id="answer" autofocus placeholder="Player One pick a word">
       </form>
       </section>
       <main>
-        <input id="guess" autofocus placeholder="player two what's your guess?">
+        <input id="guess" autofocus placeholder="Player Two what's your guess?">
       </main>
       <section>
       </section>

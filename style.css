@@ -11,12 +11,22 @@ h2 {
   padding:20px;
 }
 
+h3 {
+  line-height: 25px;
+  padding-bottom: 10px;
+}
+
 header {
   height: 120px;
   /*outline: dotted red 1px;*/
   text-align: center;
   line-height: 70px;
 
+}
+
+article {
+  font-size: 37px;
+  color: red;
 }
 
 .blankAnswer {
@@ -82,7 +92,8 @@ nav {
 display: flex;
  flex-direction: row;
  flex-wrap: wrap;
-justify-content: flex-start;
+ align-items: flex-start;
+justify-content:flex-end;
   order: -1;
   /*outline: dotted red 1px;*/
   width: 200px;
@@ -96,8 +107,6 @@ nav div {
   background-color: lemonchiffon;
   text-align: center;
 }
-
-
 
 #main {
   display: flex;
@@ -131,7 +140,7 @@ section {
 display: flex;
 flex-direction: row;
  align-content: space-between;
- justify-content: space-around;;
+ justify-content: space-around;
   flex-grow: 1;
   /*outline: dotted blue 1px;*/
   height: 25%;
@@ -156,4 +165,3 @@ footer {
   /*flex-grow: 1;*/
 
 }
-img
