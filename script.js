@@ -8,7 +8,7 @@ guessBoard = $(".guesses")
 // Wireframe it out
 //
 // make a form entry, on submit, store to variable DONE
-// limit guesses to lowercase letters
+// limit guesses to lowercase letters DONE
 // limit guesses to fewer than ten letters DONE
 // on submit - change focus to other text box DONE
 // split variable to array DONE
@@ -86,11 +86,10 @@ if ((/\d/).test(guess) || (/\W/).test(guess)) {
   $("#guess").attr("placeholder", "That's not a letter");
   setTimeout(function(){$("#guess").attr("placeholder", "Try again")}, 900)
 }
-
   //if the guess has not been guessed yet, push to guesses array
 else if ($.inArray(guess, guesses) < 0 ) {
 
-  $(".guesses").append("<div class='guess'>" + guess + "</div>")
+  $(".guesses").append("<div class='guess'>" + guess.toUpperCase() + "</div>")
   guesses.push(guess)
 
 //and then if the guess is not in the answerArray
@@ -163,48 +162,17 @@ $("#answer").attr("placeholder", "Player Two pick a word")
 $("#guess").attr("placeholder", "Player One what's your guess?")
 }
 
-
 for (i = 0; i < answerArray.length; i++) {
-//   answerArray.pop();
   blankSection.children().remove();
-//   console.log("removing answers:")
-//
+
 }
 for (i = 0; i < guesses.length; i++) {
 //   guesses.pop();
   $(".guess").remove();
-//   console.log("removing guesses:")
 }
-// for (i = 0; i < correctGuesses.length; i++) {
-//   correctGuesses.pop();
-// }
+
 setTimeout(function(){$(".water").remove()}, 600)
-console.log(guesses)
-console.log(answerArray)
-console.log(correctGuesses)
 
 }
-
-// console.log(/[0-6]/.test("3"));
-// // → true
-// console.log(/[a-z]/.test("2"));
-// // → false
-
 
 })
-
-
-
-
-
-
-// for (i=0;i<6;i++) {
-//   if (guess == (guesses[i])) {
-//   // $("h1").append(guess)
-//   // guesses.push(guess);
-//   console.log("NOPE")}
-//  else {
-//   $("h1").append(guess)
-//   guesses.push(guess);
-//   console.log(guesses)
-// $("#guess").val(null);
