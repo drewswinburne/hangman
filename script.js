@@ -100,7 +100,7 @@ $(".water").addClass('animated fadeInUp')
 $("input").css("background-color", "red")
 failCounter -= 1;
 if (failCounter == 0){
-  setTimeout(function(){alert("You have lost")}, 400)
+  setTimeout(function(){alert("You have lost, the word was: " + answer)}, 400)
   player = player + 1;
 resetBoard()
 }
@@ -120,7 +120,7 @@ if (($.inArray(guess, answerArray) > -1) && ($.inArray(guess, correctGuesses) < 
           }}
 // OKAY I DON'T KNOW WHY IT'S ADDING ONE MORE TO THE ARRAY BUT THIS IS MY HACKY SOLUTION
 if (answerArray.length+1 == correctGuesses.length){
-  setTimeout(function(){alert("Success! The word was: " + answer + "!")}, 400);
+  setTimeout(function(){alert("Success! The word was: " + answer)}, 400);
   if ((player % 2) == 0)
   {
     $("#one").html(Number(playerOnescore += 1));
@@ -131,7 +131,6 @@ if (answerArray.length+1 == correctGuesses.length){
   setTimeout(function(){resetBoard()}, 400);
 
 }
-
 }
 
 else {
