@@ -50,7 +50,7 @@ $("#answer").val(null);
 // if answer contains a number or weird character, error out
 else if ((/\d/).test(answer) || (/\W/).test(answer)) {
   $("article").remove()
-  blankSection.append("<article>No numbers or weird characters, please</article>")
+  blankSection.append("<article>No numbers or weird characters</article>")
   $("#answer").val(null);
 
 }
