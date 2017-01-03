@@ -37,11 +37,9 @@ if ((player % 2) == 1) {
 
 
 $("#answerform").on("submit", function(evt){
-  //prevent the default action
   evt.preventDefault();
 // convert to lowercase* and store as variable
 answer = $("#answer").val().toLowerCase();
-// answer = userAnswer.;
 if (answer.length > 10) {
 $("article").remove()
 blankSection.append("<article>Come on man that's too many letters</article>")
